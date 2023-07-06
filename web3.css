@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-image {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  
+}
+
+.background-image {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./Images/mbr.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0.7;
+    background-color: rgb(23, 0, 59);
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    position:relative;
+ display: flex;
+ justify-content:space-evenly;
+
+flex-wrap: wrap;
+padding: 50px;
+    width: 100%;
+
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.navbar>li>a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font: bold;
+    font-size: 20px;
+}
+.logo-name {
+    color: white;
+    background-color: rgb(196, 7, 238);
+    padding: 20px 40px;
+}
+.logoheading{
+    color: white;
+}
+.hero-section>h1{
+    color: white;
+    font-size: 80px;
+   text-align: center;
+}
+.hero-section-box{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hero-section>p{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.btn1{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.btn1>h2:nth-child(1){
+color: white;
+background-color: rgb(199, 41, 130);
+padding: 20px;
+}
+.btn1>h2:nth-child(2){
+    color: white;
+    background-color: rgb(196, 7, 238);
+    padding: 20px;
+}
+.hero-section-box2{
+    display: flex;
+    justify-content: center;
+}
+.hero-section2{
+    text-align: center;
+
+}
+.images-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.content1>img{
+width: 300px;
+aspect-ratio: 1/1;
+}
+.hero-section-box3{
+    display: flex;
+    justify-content: center;
+}
+.hero-section3{
+    display: flex;
+   gap: 50px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.hero-section3>img{
+    width: 300px;
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.content2>h1:nth-child(2){
+    font-size: 50px;
+}
+.fa-solid{
+    font-size: 50px;
+}
+.dropdown>.fa-caret-down{
+    display: none;
+}
+.hero-section-box4{
+   display: flex;
+   justify-content: center;
+}
+.content3{
+    display: flex;
+}
+.dropdown-content{
+    display: none;
+}
+.content3>p{
+    color:#17003b;
+    font-size: 30px;
+}
+.hero-section4>h1:nth-child(1){
+    color:#17003b;
+    font-size: 50px;
+}
+.footer{
+    border: 2px solid black;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #17003b;
+    color: white;
+    padding: 50px;
+}
+.list2{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+}
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
