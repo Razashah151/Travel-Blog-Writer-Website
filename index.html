@@ -25,9 +25,23 @@ const dropdown=document.getElementsByClassName('dropdown')[0];
     caretIcon.style.display='block';
   }
 }
-
-
-
+</script>
+<script>
+    function togglesidebar(){
+        const barsIcon=document.getElementsByClassName('fa-bars')[0];
+        const markIcon=document.getElementsByClassName('fa-xmark')[0];
+        const navbar=document.getElementsByClassName('navbar')[0];
+        if(navbar.style.display==='block'){
+            navbar.style.display = "none";
+            barsIcon.style.display = "block";
+            markIcon.style.display = "none";
+        }
+        else{
+            navbar.style.display = "block";
+            barsIcon.style.display = "none";
+            markIcon.style.display = "block";
+        }
+    }
 </script>
 
 <body>
@@ -38,9 +52,9 @@ const dropdown=document.getElementsByClassName('dropdown')[0];
             <div class="logo-name">
                 <h2>My Blog</h2>
             </div>
-           
-            <div class="sidebar">
-
+            <div class="sidebar" onclick="togglesidebar()">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+                <i class="fa-sharp fa-solid fa-xmark"></i>
             </div>
             <ul class="navbar">
                 <li><a href="">Home</a></li>

@@ -54,10 +54,14 @@ gap: 20px;
     font: bold;
     font-size: 20px;
 }
-.logo-name {
+.sidebar{
+    display: none;
+}
+.logo-name>h2{
     color: white;
     background-color: rgb(196, 7, 238);
     padding: 20px 40px;
+    text-align: center;
 }
 
 .hero-section>h1{
@@ -185,4 +189,34 @@ li a{
     color: white;
     text-decoration: none;
     padding: 20px;
+}
+@media screen and (max-width:320px) {
+    .main{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        display: none;
+    }
+    li a{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .sidebar{
+       display: flex;
+       justify-content: flex-end;
+       cursor: pointer;
+    }
+    .sidebar>.fa-bars{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+
+   .sidebar>.fa-xmark{
+       display: none;
+       font-size: 30px;
+       color: white;
+   }
 }
