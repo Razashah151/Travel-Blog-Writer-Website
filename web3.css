@@ -31,10 +31,10 @@
 .main {
     position:relative;
  display: flex;
- justify-content:space-evenly;
-
+ justify-content:space-between;
 flex-wrap: wrap;
-padding: 50px;
+padding:50px;
+gap: 20px;
     width: 100%;
 
 }
@@ -42,7 +42,8 @@ padding: 50px;
 .navbar {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
    
 }
 
@@ -58,9 +59,7 @@ padding: 50px;
     background-color: rgb(196, 7, 238);
     padding: 20px 40px;
 }
-.logoheading{
-    color: white;
-}
+
 .hero-section>h1{
     color: white;
     font-size: 80px;
@@ -108,6 +107,17 @@ padding: 20px;
 .content1>img{
 width: 300px;
 aspect-ratio: 1/1;
+}
+.content1>h3:hover{
+    background: blue;
+    transition: width 3s;
+    transition-timing-function: linear;
+    width: 300px;
+    color: white;
+}
+.content1>h3,h2,p{
+    font-size: 20px;
+    color: #17003b;
 }
 .hero-section-box3{
     display: flex;
