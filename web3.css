@@ -101,10 +101,10 @@ padding: 20px;
 }
 .hero-section2{
     text-align: center;
-
 }
 .images-section{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -171,13 +171,16 @@ aspect-ratio: 1/1;
 }
 .footer{
     border: 2px solid black;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #17003b;
     color: white;
     padding: 50px;
+}
+.footer>p{
+    color: white;
 }
 .list2{
     display: flex;
@@ -189,6 +192,9 @@ li a{
     color: white;
     text-decoration: none;
     padding: 20px;
+}
+.social-icons>.fa-brands{
+padding: 10px;
 }
 @media screen and (max-width:320px) {
     .main{
